@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Baklawa Bites</title>
+
+
+  <meta name="theme-color" content="#c9a054">
+  <meta property="og:title" content="Baklawa Bites">
+  <meta property="og:description" content="Handcrafted pistachio baklawa, packaged like a gift.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+<meta content="Homemade Palestinian–Jordanian baklawa. Photo-first, simple ordering." name="description"/>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="bar">
+<a aria-label="Baklawa Bites home" class="brand" href="#home">
+<div aria-hidden="true" class="mark">
+<!-- Simple “baklawa layer” mark -->
+<svg fill="none" height="22" viewbox="0 0 24 24" width="22">
+<path d="M4.5 10.5 12 4.5l7.5 6-7.5 6-7.5-6Z" stroke="rgba(26,22,18,.9)" stroke-width="1.2"></path>
+<path d="M7 12.1 12 8l5 4.1" stroke="rgba(26,22,18,.65)" stroke-width="1.1"></path>
+<path d="M6.3 13.6 12 9l5.7 4.6" stroke="rgba(199,162,75,.9)" stroke-width="1.2"></path>
+</svg>
+</div>
+<div>
+<h1>BAKLAWA BITES</h1>
+<small>Homemade Palestinian–Jordanian baklawa</small>
+</div>
+</a>
+<nav aria-label="Primary">
+<a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+<a href="#shop">Shop</a>
+<a href="#checkout">Checkout</a>
+</nav>
+<div class="actions">
+<button class="btn ghost" data-scroll="#shop" type="button">Order now</button>
+<button aria-controls="cartDrawer" aria-haspopup="dialog" class="btn" id="cartBtn" type="button">
+            Cart <span class="badge gold" id="cartCount">0</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<div aria-hidden="true" class="overlay" id="overlay"></div>
+<aside aria-label="Cart" aria-modal="true" class="drawer" id="cartDrawer" role="dialog">
+<div class="drawerHead">
+<b>Your cart</b>
+<button class="btn ghost" id="closeCart" type="button">Close</button>
+</div>
+<div class="drawerBody" id="drawerItems"></div>
+<div class="drawerFoot">
+<div class="line">
+<small>Subtotal</small>
+<b id="drawerSubtotal">$0.00</b>
+</div>
+<button class="btn primary" data-scroll="#checkout" id="drawerCheckout" type="button">Go to checkout</button>
+<button class="btn ghost" id="clearCart" type="button">Clear cart</button>
+</div>
+</aside>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<main>
+<div class="wrap">
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="heroCard">
+<div class="heroMedia">
+<img loading="eager" fetchpriority="high" decoding="async" alt="Baklawa Bites large boxed baklava" src="assets/images/img_a3f22da842da6424.webp"/>
+<div class="heroOverlay">
+<div class="glass">
+<div class="kicker">Baked • Cut • Boxed</div>
+<h2>Baklawa made for sharing.</h2>
+<div class="ctaRow">
+<button class="btn primary" data-scroll="#shop" type="button">Shop packs</button>
+<button class="btn ghost" data-scroll="#checkout" type="button">Checkout</button>
+</div>
+<div aria-hidden="true" class="heroMeta">
+<span class="pill">Kraft gift box</span>
+<span class="pill">Pistachio finish</span>
+<span class="pill">Made to order</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="heroStrip">
+<div>Flat shipping <b>$4.99</b></div>
+<div>Tax shown
+  <section id="gallery" class="section section--alt">
+    <div class="container">
+      <div class="sectionHead">
+        <span class="eyebrow">Gallery</span>
+        <h2>From our kitchen to your table</h2>
+        <p class="muted">Real batches, real pistachio, and gift-ready packaging. Click any photo to view it full size.</p>
+      </div>
+
+      <div class="galleryGrid" id="galleryGrid">
+
+        <button class="gCard" type="button" data-index="0" aria-label="Open photo: Gift-ready Baklawa Bites boxes with ribbon">
+          <img src="assets/images/img_67fe159ee6f184b9.jpg" alt="Gift-ready Baklawa Bites boxes with ribbon" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Packaging</span>
+          </span>
+        </button>
+
+        <button class="gCard" type="button" data-index="1" aria-label="Open photo: Full tray batch of baklava bites, cut and sprinkled with pistachio">
+          <img src="assets/images/img_ddf864f747c8482a.jpg" alt="Full tray batch of baklava bites, cut and sprinkled with pistachio" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Fresh batch</span>
+          </span>
+        </button>
+
+        <button class="gCard" type="button" data-index="2" aria-label="Open photo: Baklava bites in a tray, pistachio dusting">
+          <img src="assets/images/img_2ffe0dce4bbb9c89.jpg" alt="Baklava bites in a tray, pistachio dusting" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Fresh batch</span>
+          </span>
+        </button>
+
+        <button class="gCard" type="button" data-index="3" aria-label="Open photo: Close-up angle of baklava bites in tray">
+          <img src="assets/images/img_14cf7d0d8a10cf01.jpg" alt="Close-up angle of baklava bites in tray" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Texture</span>
+          </span>
+        </button>
+
+        <button class="gCard" type="button" data-index="4" aria-label="Open photo: Pistachio-dusted tray grid pattern">
+          <img src="assets/images/img_8a1773bc8c8f70ae.jpg" alt="Pistachio-dusted tray grid pattern" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Fresh batch</span>
+          </span>
+        </button>
+
+        <button class="gCard" type="button" data-index="5" aria-label="Open photo: Pistachio stripes across rows">
+          <img src="assets/images/img_102dbf421db9cabf.jpg" alt="Pistachio stripes across rows" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Signature</span>
+          </span>
+        </button>
+
+        <button class="gCard" type="button" data-index="6" aria-label="Open photo: Baklava bites close-up, glossy syrup and pistachio">
+          <img src="assets/images/img_db0f3369e2bff0ff.jpg" alt="Baklava bites close-up, glossy syrup and pistachio" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Texture</span>
+          </span>
+        </button>
+
+        <button class="gCard" type="button" data-index="7" aria-label="Open photo: Baklava bites close-up, sprinkled pistachio">
+          <img src="assets/images/img_22b98ef689136b2a.jpg" alt="Baklava bites close-up, sprinkled pistachio" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Texture</span>
+          </span>
+        </button>
+
+        <button class="gCard" type="button" data-index="8" aria-label="Open photo: Golden baked tray before pistachio topping">
+          <img src="assets/images/img_6efdee91f43dc664.jpg" alt="Golden baked tray before pistachio topping" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Bake</span>
+          </span>
+        </button>
+
+        <button class="gCard" type="button" data-index="9" aria-label="Open photo: Foil pan packed with baklava bites">
+          <img src="assets/images/img_74f877169b26df69.jpg" alt="Foil pan packed with baklava bites" loading="lazy" decoding="async" />
+          <span class="gOverlay">
+            <span class="gTag">Ready</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+ as an estimate</div>
+</div>
+</section>
+<!-- SHOP -->
+<section aria-label="Shop" id="shop">
+<div class="sectionHead">
+<div>
+<h3>Shop</h3>
+<p>Choose a pack size, add to cart.</p>
+</div>
+<div class="badge gold" id="shopCartHint" title="Items in cart">0 items</div>
+</div>
+<div class="grid" id="productGrid">
+<!-- 15 -->
+<article class="card" data-sku="15">
+<div class="cardMedia">
+<img loading="lazy" decoding="async" alt="Baklawa Bites 15-pack gift box" src="assets/images/img_d139dd9fc7926fb8.webp"/>
+</div>
+<div class="cardBody">
+<div class="row">
+<div class="name">12 Bites</div>
+<div class="price">$11.99</div>
+</div>
+<div class="controls">
+<div aria-label="Quantity" class="qty">
+<button class="qbtn" data-action="dec" type="button">−</button>
+<input aria-label="Quantity input" inputmode="numeric" min="1" type="number" value="1"/>
+<button class="qbtn" data-action="inc" type="button">+</button>
+</div>
+<button class="btn primary add" type="button">Add to cart</button>
+</div>
+<div class="hint">Gift-ready kraft box.</div>
+</div>
+</article>
+<!-- 24 -->
+<article class="card" data-sku="24">
+<div class="cardMedia">
+<img loading="lazy" decoding="async" alt="Baklawa Bites rolled baklava tray" src="assets/images/img_9d76a75f5db2fcd4.webp"/>
+</div>
+<div class="cardBody">
+<div class="row">
+<div class="name">24 Bites</div>
+<div class="price">$24.99</div>
+</div>
+<div class="controls">
+<div aria-label="Quantity" class="qty">
+<button class="qbtn" data-action="dec" type="button">−</button>
+<input aria-label="Quantity input" inputmode="numeric" min="1" type="number" value="1"/>
+<button class="qbtn" data-action="inc" type="button">+</button>
+</div>
+<button class="btn primary add" type="button">Add to cart</button>
+</div>
+<div class="hint">Perfect for sharing.</div>
+</div>
+</article>
+<!-- 48 -->
+<article class="card" data-sku="48">
+<div class="cardMedia">
+<img loading="lazy" decoding="async" alt="Baklawa Bites 48-pack" src="assets/images/img_599c2e7bf9f6a1e9.webp"/>
+</div>
+<div class="cardBody">
+<div class="row">
+<div class="name">48 Bites</div>
+<div class="price">$44.99</div>
+</div>
+<div class="controls">
+<div aria-label="Quantity" class="qty">
+<button class="qbtn" data-action="dec" type="button">−</button>
+<input aria-label="Quantity input" inputmode="numeric" min="1" type="number" value="1"/>
+<button class="qbtn" data-action="inc" type="button">+</button>
+</div>
+<button class="btn primary add" type="button">Add to cart</button>
+</div>
+<div class="hint">Big tray energy.</div>
+</div>
+</article>
+</div>
+<footer>
+<div class="line">
+<small>Shipping is added at checkout.</small>
+<small>© <span id="year"></span> Baklawa Bites</small>
+</div>
+</footer>
+</section>
+<!-- CHECKOUT -->
+<section aria-label="Checkout" class="checkout" id="checkout">
+<div class="sectionHead" style="margin-top:34px">
+<div>
+<h3>Checkout</h3>
+<p>Confirm details, place your order.</p>
+</div>
+</div>
+<div class="checkoutGrid">
+<div class="panel">
+<h4>Details</h4>
+<div aria-label="Delivery method" class="shipToggle">
+<button aria-pressed="true" class="chip" id="shipBtn" type="button">Ship</button>
+<button aria-pressed="false" class="chip" id="pickupBtn" type="button">Pickup</button>
+</div>
+<form id="checkoutForm">
+<div class="two">
+<div>
+<label for="name">Full name</label>
+<input autocomplete="name" id="name" placeholder="Your name" required=""/>
+</div>
+<div>
+<label for="phone">Phone</label>
+<input autocomplete="tel" id="phone" placeholder="(555) 555-5555" required=""/>
+</div>
+</div>
+<div>
+<label for="email">Email (optional)</label>
+<input autocomplete="email" id="email" placeholder="you@email.com"/>
+</div>
+<div id="addressFields">
+<div>
+<label for="address">Address</label>
+<input autocomplete="street-address" id="address" placeholder="Street address"/>
+</div>
+<div class="two">
+<div>
+<label for="city">City</label>
+<input autocomplete="address-level2" id="city" placeholder="City"/>
+</div>
+<div>
+<label for="state">State</label>
+<select autocomplete="address-level1" id="state">
+<option value="NE">NE</option>
+<option value="IA">IA</option>
+<option value="KS">KS</option>
+<option value="MO">MO</option>
+<option value="Other">Other</option>
+</select>
+</div>
+</div>
+<div class="two">
+<div>
+<label for="zip">ZIP</label>
+<input autocomplete="postal-code" id="zip" placeholder="ZIP code"/>
+</div>
+<div>
+<label for="tax">Tax rate (estimate)</label>
+<input id="tax" inputmode="decimal" placeholder="7.25"/>
+</div>
+</div>
+</div>
+<button class="btn primary" id="placeOrder" type="submit">Place order</button>
+<small style="color:var(--muted)">You’ll get an order confirmation message on this page.</small>
+</form>
+</div>
+<div class="panel">
+<h4>Order summary</h4>
+<div class="items" id="summaryItems"></div>
+<div class="summaryList">
+<div class="line"><small>Subtotal</small><b id="sumSubtotal">$0.00</b></div>
+<div class="line"><small>Shipping</small><b id="sumShipping">$0.00</b></div>
+<div class="line"><small>Estimated tax</small><b id="sumTax">$0.00</b></div>
+<div class="line" style="border-top:1px solid rgba(26,22,18,.10); padding-top:10px; margin-top:2px">
+<small>Total</small><b id="sumTotal">$0.00</b>
+</div>
+</div>
+<div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+<button class="btn ghost" id="editCart" type="button">Edit cart</button>
+<button class="btn ghost" id="scrollShop" type="button">Back to shop</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+
+  <!-- Gallery Lightbox -->
+  <div class="lb" id="lb" aria-hidden="true">
+    <div class="lbBackdrop" data-lb-close></div>
+
+    <div class="lbPanel" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <div class="lbTop">
+        <div class="lbMeta">
+          <span class="lbKicker" id="lbKicker">Gallery</span>
+          <span class="lbCaption" id="lbCaption">—</span>
+        </div>
+
+        <button class="lbBtn lbClose" type="button" data-lb-close aria-label="Close (Esc)">
+          ✕
+        </button>
+      </div>
+
+      <div class="lbBody">
+        <button class="lbBtn lbNav lbPrev" type="button" id="lbPrev" aria-label="Previous (←)">‹</button>
+        <img loading="lazy" decoding="async" class="lbImg" id="lbImg" alt="" />
+        <button class="lbBtn lbNav lbNext" type="button" id="lbNext" aria-label="Next (→)">›</button>
+      </div>
+
+      <div class="lbBottom">
+        <span class="lbCount" id="lbCount">1 / 1</span>
+        <span class="lbHint">Tip: use ← → keys</span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
